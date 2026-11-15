@@ -1,25 +1,15 @@
-# Homebrew tap for clwokki
+# clwokki moved to dardevelin/tap
 
-clwokki is Wokki's terminal client: voice and chat on Mumble servers from
-the terminal, a status bar and the Mac's menu bar. Its releases, and what's
-new in each, are on
-[dardevelin/clwokki-releases](https://github.com/dardevelin/clwokki-releases/releases).
+clwokki is now in [dardevelin/homebrew-tap](https://github.com/dardevelin/homebrew-tap),
+with the other tools I make.
 
-## Installing
+- **New installs**: `brew install --cask dardevelin/tap/clwokki` (macOS) or
+  `brew install dardevelin/tap/clwokki` (Linux).
+- **Installed from this tap?** Run `brew trust --cask dardevelin/tap/clwokki`
+  (on Linux, `brew trust --formula dardevelin/tap/clwokki`), then
+  `brew update`. Homebrew follows `tap_migrations.json` here to the new tap.
+  If brew already said clwokki moved, run
+  `brew reinstall --cask dardevelin/tap/clwokki` instead. Then
+  `brew untap dardevelin/wokki`.
 
-- **macOS 27 or later**: `brew install --cask dardevelin/wokki/clwokki`.
-  It installs `/Applications/clwokki.app` (Developer ID signed and
-  notarized) and the `clwokki` command.
-- **Linux** (glibc 2.35 or later), x86_64 or aarch64, with Homebrew on
-  Linux: `brew install dardevelin/wokki/clwokki`. `brew services start
-  clwokki` keeps its daemon running.
-
-## Updating
-
-clwokki still looks for a newer release once a day, and when its terminal
-UI or menu bar opens, and says when one is out with the command to run:
-
-- macOS: `brew upgrade --cask clwokki`
-- Linux: `brew upgrade clwokki`
-
-Then `clwokki restart` puts a running daemon on the new version.
+Your servers, pairings and settings stay as they are.
